@@ -1,4 +1,3 @@
-/* Type Selector */
 body {
     font-family: 'Cursive', Helvetica, sans-serif;
     background-color: #fbf4f4;
@@ -7,23 +6,20 @@ body {
     padding: 0;
 }
 
-/* Type Selector */
 header {
     background-color: #0b3d91;
     color: white;
     text-align: center;
     padding: 20px;
-    border-bottom: 4px solid #00a8cc;
+    border-bottom: 4px solid #00a8cc;font-family: 'brush script mt', cursive;Font-size: 2.5em;
 }
 
-/* Type Selector */
 nav {
     background-color: #00a8cc;
     padding: 15px;
     text-align: center;
 }
 
-/* Type Selector */
 nav a {
     color: white;
     text-decoration: none;
@@ -35,7 +31,6 @@ nav a:hover {
     color: #ffd166;
 }
 
-/* Class Selector */
 .section {
     background-color: white;
     margin: 20px;
@@ -44,17 +39,16 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* ID Selector */
 #welcome {
     color: #0b3d91;
     font-size: 2em;
 }
 
-/* Type Selector */
 footer {
-    background-color: #0b3d91;
+    background-color: #003fac;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
 }
+
