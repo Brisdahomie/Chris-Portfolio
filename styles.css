@@ -14,14 +14,18 @@ header {
     border-bottom: 4px solid #00a8cc;font-family: 'brush script mt', cursive;Font-size: 2.5em;
 }
 
-nav {
+ nav{
     background-color: #00a8cc;
     padding: 15px;
     text-align: center;
+    border: 3px solid #0b3d91;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 nav a {
-    color: white;
+    
+    color: #0b3d91;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -41,7 +45,7 @@ nav a:hover {
 
 #welcome {
     color: #0b3d91;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 footer {
