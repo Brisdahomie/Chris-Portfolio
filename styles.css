@@ -1,18 +1,15 @@
 body {
-    font-family: 'Cursive', Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #fbf4f4;
     color: #1f2937;
-    margin: 0;
-    padding: 0;
 }
 
 header {
+    font-family: "Playfair Display", serif;
     background-color: #0b3d91;
     color: white;
+    text-align: center;
     padding: 20px;
-    border-bottom: 4px solid #00a8cc;
-    font-family: 'brush script mt', cursive;
-    Font-size: 2.5em;
 }
 
  nav {
