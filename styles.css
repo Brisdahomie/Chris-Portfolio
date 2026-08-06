@@ -33,8 +33,11 @@ nav a {
     border-radius: 5px;
 }
 
-nav a:hover {
+
+nav a:hover,
+nav a:focus {
     color: #ffd166;
+    text-decoration: underline;
 }
 
 .section {
