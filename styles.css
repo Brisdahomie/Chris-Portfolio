@@ -48,6 +48,9 @@ nav a:focus {
     border-radius: 8px;
 }
 
+.section:hover {
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
 #welcome {
     color: #0b3d91;
     font-size: 1.5em;
