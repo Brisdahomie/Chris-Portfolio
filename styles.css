@@ -44,13 +44,14 @@ nav a:focus {
     background-color: white;
     margin: 20px;
     padding: 20px;
-    border: 2px solid #0b3d91;
+    border: 2px solid #000000;
     border-radius: 8px;
 }
 
 .section:hover {
     transform: scale(1.05);
     box shadow: 0 8px 20px black;
+    background-color: #0b3d91;
 
     transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
