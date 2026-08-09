@@ -51,7 +51,7 @@ nav a:focus {
 .section:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px black;
-    background-color: #00a8cc;
+    background-color: #e0e009;
     transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 #welcome {
