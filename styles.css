@@ -36,7 +36,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #0b3d91;
+    color: #D4A017;
     text-decoration: underline;
 }
 
@@ -51,7 +51,7 @@ nav a:focus {
 .section:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px black;
-    background-color: #e0e009;
+    background-color: #D4A017;
     transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 #welcome {
