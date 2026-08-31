@@ -115,3 +115,45 @@ if (contactForm) {
         }
     });
 }
+
+const changeTextButton = document.querySelector("#changeTextButton");
+const messageText = document.querySelector("#messageText");
+
+if (changeTextButton && messageText) {
+    changeTextButton.addEventListener("click", function () {
+        messageText.textContent =
+            "The content was changed with JavaScript!";
+    });
+}
+
+const taskInput = document.querySelector("#taskInput");
+
+if (taskInput) {
+    taskInput.addEventListener("input", function () {
+        if (taskInput.value.trim() !== "") {
+            taskInput.style.backgroundColor = "#f2cd93";
+        } else {
+            taskInput.style.backgroundColor = "#fff8e8";
+        }
+    });
+}
+
+const addTaskButton = document.querySelector("#addTaskButton");
+const taskList = document.querySelector("#taskList");
+
+if (addTaskButton && taskInput && taskList) {
+    addTaskButton.addEventListener("click", function () {
+        const taskText = taskInput.value.trim();
+
+        if (taskText !== "") {
+            const newTask = document.createElement("li");
+
+            newTask.textContent = taskText;
+
+            taskList.appendChild(newTask);
+
+            taskInput.value = "";
+            taskInput.style.backgroundColor = "#fff8e8";
+        }
+    });
+}
