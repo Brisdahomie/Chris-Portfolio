@@ -84,11 +84,17 @@ if (contactForm) {
 
         if (!formIsValid) {
             event.preventDefault();
+
+            const firstInvalidField =
+                contactForm.querySelector('[aria-invalid="true"]');
+
+            if (firstInvalidField) {
+                firstInvalidField.focus();
+            }
         }
     });
 
-
-        nameInput.addEventListener("input", function () {
+    nameInput.addEventListener("input", function () {
         if (nameInput.value.trim() !== "") {
             clearError(nameInput, nameError);
         }

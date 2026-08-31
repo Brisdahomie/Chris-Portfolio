@@ -35,20 +35,59 @@
         <section class="section">
             <h2>Contact Me</h2>
 
-            <form action="#" method="post">
+            <form    id="contactForm"
+                     action="#"
+                    method="post"
+                    novalidate>
 
                 <fieldset>
 
                     <legend>Contact Information</legend>
 
                     <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" required>
+
+<input
+    type="text"
+    id="name"
+    name="name"
+    required
+    aria-describedby="nameError">
+
+<p
+    id="nameError"
+    class="error-message"
+    aria-live="polite">
+</p>
                     <br><br>
                     <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" required>
+
+<input
+    type="email"
+    id="email"
+    name="email"
+    required
+    aria-describedby="emailError">
+
+<p
+    id="emailError"
+    class="error-message"
+    aria-live="polite">
+</p>
                     <br><br>
                     <label for="message">Message</label><br>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+
+<textarea
+    id="message"
+    name="message"
+    rows="5"
+    required
+    aria-describedby="messageError"></textarea>
+
+<p
+    id="messageError"
+    class="error-message"
+    aria-live="polite">
+</p>
                     <br><br>
 
                     <button type="submit">Send Message</button>
@@ -63,6 +102,7 @@
     <footer>
         <p>&copy; 2026 Christopher Edwards. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

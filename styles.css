@@ -151,9 +151,30 @@ button:focus {
     color: var(--pitch-black);
 }
 
+button:focus {
+    outline: 3px solid #000000;
+    outline-offset: 3px;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .section:hover {
         transform: none;
         transition: none;
     }
+}
+
+.error-message {
+    color: #b00020;
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border: 3px solid #b00020;
+}
+
+#skillsButton {
+    margin-bottom: 15px;
 }
