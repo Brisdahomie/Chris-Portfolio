@@ -178,3 +178,29 @@ textarea[aria-invalid="true"] {
 #skillsButton {
     margin-bottom: 15px;
 }
+
+.error {
+    color: #b00020;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#successMessage {
+    color: #087f23;
+    font-weight: bold;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 100px;
+}
