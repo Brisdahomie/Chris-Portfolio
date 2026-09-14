@@ -126,7 +126,7 @@ if (
 const apiButton = document.querySelector("#apiButton");
 const apiResult = document.querySelector("#apiResult");
 
-if (apiButton) {
+if (apiButton && apiResult) {
 
     apiButton.addEventListener("click", function() {
 
