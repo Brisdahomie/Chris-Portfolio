@@ -60,34 +60,34 @@ if (addTaskButton && taskInput && taskList) {
 
 const form = document.querySelector("#contactForm");
 
-const fullName = document.querySelector("#fullName");
+const name = document.querySelector("#name");
 const email = document.querySelector("#email");
-const phone = document.querySelector("#phone");
 const message = document.querySelector("#message");
 
 const nameError = document.querySelector("#nameError");
 const emailError = document.querySelector("#emailError");
-const phoneError = document.querySelector("#phoneError");
 const messageError = document.querySelector("#messageError");
 
-const successMessage = document.querySelector("#successMessage");
-
-if (form) {
-
-    form.addEventListener("submit", function(event) {
-
+if (
+    form &&
+    name &&
+    email &&
+    message &&
+    nameError &&
+    emailError &&
+    messageError
+) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
 
         let isValid = true;
 
         nameError.textContent = "";
         emailError.textContent = "";
-        phoneError.textContent = "";
         messageError.textContent = "";
-        successMessage.textContent = "";
 
-        if (fullName.value.trim() === "") {
-            nameError.textContent = "Please enter your full name.";
+        if (name.value.trim() === "") {
+            nameError.textContent = "Please enter your name.";
             isValid = false;
         }
 
@@ -99,38 +99,26 @@ if (form) {
             isValid = false;
         }
 
-        if (phone.value.trim() === "") {
-            phoneError.textContent = "Please enter your phone number.";
-            isValid = false;
-        }
-
         if (message.value.trim() === "") {
             messageError.textContent = "Please enter a message.";
             isValid = false;
         }
 
         if (isValid) {
-            successMessage.textContent =
-                "Form submitted successfully!";
-
+            alert("Form submitted successfully!");
             form.reset();
         }
-
     });
 
-    fullName.addEventListener("input", function() {
+    name.addEventListener("input", function () {
         nameError.textContent = "";
     });
 
-    email.addEventListener("input", function() {
+    email.addEventListener("input", function () {
         emailError.textContent = "";
     });
 
-    phone.addEventListener("input", function() {
-        phoneError.textContent = "";
-    });
-
-    message.addEventListener("input", function() {
+    message.addEventListener("input", function () {
         messageError.textContent = "";
     });
 }
